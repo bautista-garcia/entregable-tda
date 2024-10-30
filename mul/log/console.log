@@ -1,0 +1,182 @@
+# Design: Design mul already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -e 100 -work mul -2002  $dsn/src/utils.vhd $dsn/src/controller.vhd $dsn/src/fa.vhd $dsn/src/fa8.vhd $dsn/src/multiplicador.vhd $dsn/src/shift.vhd $dsn/src/test_multiplicador.vhd
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "Multiplier"
+# Compile Architecture "Behavioral" of Entity "Multiplier"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "Multiplier_tb"
+# Compile Architecture "test" of Entity "Multiplier_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Multiplier_tb
+# Compile Architecture "Behavioral" of Entity "Multiplier"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work mul -2002  $dsn/src/utils.vhd $dsn/src/shift.vhd $dsn/src/fa.vhd $dsn/src/controller.vhd $dsn/src/fa8.vhd $dsn/src/multiplicador.vhd $dsn/src/test_multiplicador.vhd
+# Compile Package "Utils"
+# Compile Package Body "Utils"
+# Compile Entity "ShiftN"
+# Compile Architecture "Behavior" of Entity "ShiftN"
+# Compile Entity "fulladder"
+# Compile Architecture "ecuacion" of Entity "fulladder"
+# Compile Entity "Controller"
+# Compile Architecture "FSM" of Entity "Controller"
+# Compile Entity "Adder8"
+# Compile Architecture "Estructura" of Entity "Adder8"
+# Compile Entity "multiplicador"
+# Compile Architecture "Behavioral" of Entity "multiplicador"
+# Compile Entity "test_multiplicador"
+# Compile Architecture "test" of Entity "test_multiplicador"
+# Error: COMP96_0078: test_multiplicador.vhd : (51, 10): Unknown identifier "Multiplier".
+# Error: COMP96_0134: test_multiplicador.vhd : (51, 10): Cannot find component declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work mul -2002  $dsn/src/test_multiplicador.vhd
+# Compile Entity "test_multiplicador"
+# Compile Architecture "test" of Entity "test_multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_multiplicador test_multiplicador test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6441 kB (elbread=427 elab2=5873 kernel=140 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\entregable\mul\src\wave.asdb
+#  09:38, miércoles, 30 de octubre de 2024
+#  Simulation has been initialized
+run 5 ns
+# KERNEL: stopped at time: 5 ns
+# add wave -noreg {/test_multiplicador/CLK}
+# add wave -noreg {/test_multiplicador/CLR}
+# add wave -noreg {/test_multiplicador/STB}
+# add wave -noreg {/test_multiplicador/A}
+# add wave -noreg {/test_multiplicador/B}
+# add wave -noreg {/test_multiplicador/Result}
+# add wave -noreg {/test_multiplicador/Done}
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/entregable/mul/src/wave.asdb'.
+run 5 ns
+# KERNEL: stopped at time: 10 ns
+run 5 ns
+# KERNEL: stopped at time: 15 ns
+run 5 ns
+# KERNEL: stopped at time: 20 ns
+run 5 ns
+# KERNEL: stopped at time: 25 ns
+run 5 ns
+# KERNEL: stopped at time: 30 ns
+run 5 ns
+# KERNEL: stopped at time: 35 ns
+run 100 ns
+# KERNEL: stopped at time: 135 ns
+run 100 ns
+# KERNEL: stopped at time: 235 ns
+run 100 ns
+# KERNEL: stopped at time: 335 ns
+run 100 ns
+# KERNEL: stopped at time: 435 ns
+run 5 ns
+acom -O3 -e 100 -work mul -2002  $dsn/src/test_multiplicador.vhd
+# Compile Entity "test_multiplicador"
+# Compile Architecture "test" of Entity "test_multiplicador"
+# Error: COMP96_0123: test_multiplicador.vhd : (101, 3): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6441 kB (elbread=427 elab2=5873 kernel=140 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\entregable\mul\src\wave.asdb
+#  09:41, miércoles, 30 de octubre de 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/entregable/mul/src/wave.asdb'.
+acom -O3 -e 100 -work mul -2002  $dsn/src/test_multiplicador.vhd
+# Compile Entity "test_multiplicador"
+# Compile Architecture "test" of Entity "test_multiplicador"
+# Error: COMP96_0123: test_multiplicador.vhd : (101, 3): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+run 5 ns
+acom -O3 -e 100 -work mul -2002  $dsn/src/test_multiplicador.vhd
+# Compile Entity "test_multiplicador"
+# Compile Architecture "test" of Entity "test_multiplicador"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6441 kB (elbread=427 elab2=5873 kernel=140 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\entregable\mul\src\wave.asdb
+#  09:42, miércoles, 30 de octubre de 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/entregable/mul/src/wave.asdb'.
+run 5 ns
+# KERNEL: stopped at time: 5 ns
+run 5 ns
+# KERNEL: stopped at time: 10 ns
+run 5 ns
+# KERNEL: stopped at time: 15 ns
+run 5 ns
+# KERNEL: stopped at time: 20 ns
+run 5 ns
+# KERNEL: stopped at time: 25 ns
+run 5 ns
+# KERNEL: stopped at time: 30 ns
+run 5 ns
+# KERNEL: stopped at time: 35 ns
+endsim
+# VSIM: Simulation has finished.

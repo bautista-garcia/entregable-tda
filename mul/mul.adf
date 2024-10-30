@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=mul
+[Library]
+mul=.\mul\mul.lib
+[$LibMap$]
+mul=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/utils.vhd=-1
+/shift.vhd=-1
+/fa.vhd=-1
+/controller.vhd=-1
+/fa8.vhd=-1
+/multiplicador.vhd=-1
+/test_multiplicador.vhd=-1
+/test_multiplicador.vhd=-1
+[Files.Data]
+.\src\utils.vhd=VHDL Source Code
+.\src\shift.vhd=VHDL Source Code
+.\src\fa.vhd=VHDL Source Code
+.\src\controller.vhd=VHDL Source Code
+.\src\fa8.vhd=VHDL Source Code
+.\src\multiplicador.vhd=VHDL Source Code
+.\src\test_multiplicador.vhd=VHDL Source Code
+.\src\test_multiplicador.vhd=VHDL Source Code

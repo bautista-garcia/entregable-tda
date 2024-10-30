@@ -1,0 +1,39 @@
+Active-HDL 15.0.261.9132 2024-10-30 09:42:56
+
+Elaboration top modules:
+Architecture                  test(test_multiplicador)
+
+
+-----------------------------------------------------------------------------------------------------
+Entity             | Architecture | Library | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+test_multiplicador | test         | mul     |      | 15.0.261.9132 (Windows64) | -O3
+multiplicador      | Behavioral   | mul     |      | 15.0.261.9132 (Windows64) | -O3
+Adder8             | Estructura   | mul     |      | 15.0.261.9132 (Windows64) | -O3
+ShiftN             | Behavior     | mul     |      | 15.0.261.9132 (Windows64) | -O3
+Controller         | FSM          | mul     |      | 15.0.261.9132 (Windows64) | -O3
+fulladder          | ecuacion     | mul     |      | 15.0.261.9132 (Windows64) | -O3
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+VHDL Package                      | Library | Info | Compiler Version          | Compilation Options
+-----------------------------------------------------------------------------------------------------
+standard                          | std     |      |                           | <unavailable>
+Utils                             | mul     |      | 15.0.261.9132 (Windows64) | -O3
+TEXTIO                            | std     |      | 15.0.261.9132 (Windows64) |  -2019
+std_logic_1164                    | ieee    |      | 15.0.261.9132 (Windows64) |  -2008
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+Library                           | Comment
+-----------------------------------------------------------------------------------------------------
+ieee                              | Standard IEEE packages library
+mul                               | None
+std                               | Standard VHDL library
+-----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+test_multiplicador test_multiplicador test
+
+
+The performance of simulation is reduced. Version Student Edition

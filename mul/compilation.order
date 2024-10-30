@@ -1,0 +1,7 @@
+.\src\utils.vhd
+.\src\shift.vhd
+.\src\fa.vhd
+.\src\controller.vhd
+.\src\fa8.vhd
+.\src\multiplicador.vhd
+.\src\test_multiplicador.vhd

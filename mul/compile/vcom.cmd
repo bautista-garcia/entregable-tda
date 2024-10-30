@@ -1,0 +1,1 @@
+-w -d c:/My_Designs/entregable/mul/compile -s c:/My_Designs/entregable/library.cfg -j c:/My_Designs/entregable/mul/projlib.cfg -work mul -O3 -e 100 -work mul -2002 c:/My_Designs/entregable/mul/src/test_multiplicador.vhd 
